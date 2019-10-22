@@ -16,8 +16,9 @@ temp_array = []
     column_index += 1 
     end
     puts total
+    temp_array.push(total)
  row_index += 1
  end
-
+puts temp_array
 puts directors_hash
 end
