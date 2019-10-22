@@ -7,9 +7,10 @@ directors_hash = {}
 total = 0 
  row_index = 0 
  while row_index < nds.length do 
+   inner_len = nds[row_index][:movies].length
   column_index = 0 
   while column_index < nds[row_index].length do 
-    inner_len = nds[row_index][:movies].length
+    
       while column_index < inner_len do 
         total += nds[row_index][:movies][column_index][:worldwide_gross]
         puts total
