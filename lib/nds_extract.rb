@@ -3,19 +3,21 @@ require 'directors_database'
 
 def directors_totals(nds)
 directors_hash = {}
-
-total = 0 
+temp_array = []
  row_index = 0 
  while row_index < nds.length do 
+   temp_array.push(nds[row_index][:name])
+   #total of each director
+   total = 0
    inner_len = nds[row_index][:movies].length
     column_index = 0 
     while column_index < inner_len do 
       total += nds[row_index][:movies][column_index][:worldwide_gross]
-      puts total
     column_index += 1 
     end
+    puts total
  row_index += 1
  end
-directors_hash[nds[row_index][:name]] = total
+
 puts directors_hash
 end
