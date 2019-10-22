@@ -16,5 +16,6 @@ total = 0
     end
  row_index += 1
  end
-directors_hash[:name] = total
+directors_hash[nds[row_index][:name]] = total
+puts directors_hash
 end
