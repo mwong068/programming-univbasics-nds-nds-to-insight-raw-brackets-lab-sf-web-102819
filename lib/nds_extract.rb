@@ -19,5 +19,10 @@ temp_array = []
  row_index += 1
  end
 puts temp_array
-directors_hash = temp_array
+i = 0
+while i < temp_array.length do 
+  directors_hash[temp_array[i]] = temp_array[i+1]
+  i += 2
+end
+directors_hash
 end
