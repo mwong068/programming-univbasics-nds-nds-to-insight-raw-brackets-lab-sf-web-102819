@@ -15,10 +15,9 @@ temp_array = []
       total += nds[row_index][:movies][column_index][:worldwide_gross]
     column_index += 1 
     end
-    puts total
     temp_array.push(total)
  row_index += 1
  end
 puts temp_array
-puts directors_hash
+directors_hash = temp_array
 end
